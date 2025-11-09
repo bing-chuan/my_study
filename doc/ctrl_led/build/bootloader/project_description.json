@@ -1,15 +1,15 @@
 {
     "version":            "1.2",
-    "project_name":       "ctrl_led",
-    "project_version":    "a4460e7-dirty",
-    "project_path":       "E:/Githee/my_study/my_study/doc/ctrl_led",
+    "project_name":       "bootloader",
+    "project_version":    "v5.5.1-dirty",
+    "project_path":       "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject",
     "idf_path":           "E:/Espressif/frameworks/esp-idf-v5.5.1",
-    "build_dir":          "E:/Githee/my_study/my_study/doc/ctrl_led/build",
+    "build_dir":          "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader",
     "config_file":        "E:/Githee/my_study/my_study/doc/ctrl_led/sdkconfig",
-    "config_defaults":    "E:/Githee/my_study/my_study/doc/ctrl_led/sdkconfig.defaults",
-    "bootloader_elf":     "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/bootloader.elf",
-    "app_elf":            "ctrl_led.elf",
-    "app_bin":            "ctrl_led.bin",
+    "config_defaults":    "",
+    "bootloader_elf":     "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
     "build_type":         "flash_app",
     "git_revision":       "v5.5.1-dirty",
     "target":             "esp32c3",
@@ -21,28 +21,13 @@
     "monitor_toolprefix": "riscv32-esp-elf-",
     "c_compiler":         "E:/Espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_common/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_bitscrambler/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_gpio/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_rmt/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_mm/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_partition/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_pm/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_security/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_timer/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/mbedtls/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/pthread/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/Kconfig",
-        "COMPONENT_KCONFIGS_PROJBUILD" : "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/Kconfig.projbuild;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_app_format/Kconfig.projbuild;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/Kconfig.projbuild;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/Kconfig.projbuild;E:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/Kconfig.projbuild;E:/Githee/my_study/my_study/doc/ctrl_led/main/Kconfig.projbuild"
+        "COMPONENT_KCONFIGS" : "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_common/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_security/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/Kconfig;E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/Kconfig.projbuild;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_app_format/Kconfig.projbuild;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/Kconfig.projbuild;E:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/Kconfig.projbuild;E:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/Kconfig.projbuild"
     },
-    "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "riscv" ],
-    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "efuse", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_driver_bitscrambler", "esp_driver_gpio", "esp_driver_rmt", "esp_driver_spi", "esp_hw_support", "esp_mm", "esp_partition", "esp_pm", "esp_rom", "esp_security", "esp_system", "esp_timer", "espressif__led_strip", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "newlib", "partition_table", "pthread", "riscv", "soc", "spi_flash", "" ],
-    "build_component_paths" : [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/app_update", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/cxx", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_app_format", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_bootloader_format", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_common", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_bitscrambler", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_gpio", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_rmt", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_mm", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_partition", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_pm", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_security", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_timer", "E:/Githee/my_study/my_study/doc/ctrl_led/managed_components/espressif__led_strip", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/heap", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log", "E:/Githee/my_study/my_study/doc/ctrl_led/main", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/mbedtls", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/pthread", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/riscv", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash", "" ],
+    "common_component_reqs": [ "log", "esp_rom", "esp_common", "esp_hw_support", "newlib", "riscv" ],
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_hw_support", "esp_rom", "esp_security", "esp_system", "esptool_py", "freertos", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "riscv", "soc", "spi_flash", "" ],
+    "build_component_paths" : [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_app_format", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_bootloader_format", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_common", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_security", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/components/micro-ecc", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/riscv", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash", "" ],
     "build_component_info" : {
-        "app_update": {
-            "alias": "idf::app_update",
-            "target": "___idf_app_update",
-            "prefix": "idf",
-            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/app_update",
-            "type": "LIBRARY",
-            "lib": "__idf_app_update",
-            "reqs": [ "partition_table", "bootloader_support", "esp_app_format", "esp_bootloader_format", "esp_partition" ],
-            "priv_reqs": [ "esptool_py", "efuse", "spi_flash" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/app_update/libapp_update.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/app_update/esp_ota_ops.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/app_update/esp_ota_app_desc.c" ],
-            "include_dirs": [ "include" ]
-        },
         "bootloader": {
             "alias": "idf::bootloader",
             "target": "___idf_bootloader",
@@ -66,27 +51,12 @@
             "type": "LIBRARY",
             "lib": "__idf_bootloader_support",
             "reqs": [ "soc" ],
-            "priv_reqs": [ "spi_flash", "mbedtls", "efuse", "heap", "esp_bootloader_format", "esp_app_format" ],
+            "priv_reqs": [ "micro-ecc", "spi_flash", "efuse", "esp_bootloader_format", "esp_app_format", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/bootloader_support/libbootloader_support.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_common.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_common_loader.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_clock_init.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_mem.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_random.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_efuse.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/flash_encrypt.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/secure_boot.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_random_esp32c3.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/bootloader_flash/src/bootloader_flash.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32c3.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_utility.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/flash_partitions.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/esp_image_format.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_sha.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/esp32c3/secure_boot_secure_features.c" ],
-            "include_dirs": [ "include", "bootloader_flash/include" ]
-        },
-        "cxx": {
-            "alias": "idf::cxx",
-            "target": "___idf_cxx",
-            "prefix": "idf",
-            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/cxx",
-            "type": "LIBRARY",
-            "lib": "__idf_cxx",
-            "reqs": [],
-            "priv_reqs": [ "esp_system", "pthread" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/cxx/libcxx.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/cxx/cxx_exception_stubs.cpp", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/cxx/cxx_guards.cpp", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/cxx/cxx_init.cpp" ],
-            "include_dirs": []
+            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/esp-idf/bootloader_support/libbootloader_support.a",
+            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_common.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_common_loader.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_clock_init.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_mem.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_random.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_efuse.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/flash_encrypt.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/secure_boot.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_random_esp32c3.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/bootloader_flash/src/bootloader_flash.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32c3.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_utility.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/flash_partitions.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/esp_image_format.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_sha.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_init.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_clock_loader.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_console.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_console_loader.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/esp32c3/bootloader_soc.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/esp32c3/bootloader_esp32c3.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support/src/bootloader_panic.c" ],
+            "include_dirs": [ "include", "bootloader_flash/include", "private_include" ]
         },
         "efuse": {
             "alias": "idf::efuse",
@@ -96,11 +66,11 @@
             "type": "LIBRARY",
             "lib": "__idf_efuse",
             "reqs": [],
-            "priv_reqs": [ "bootloader_support", "soc", "spi_flash", "esp_system", "esp_partition", "esp_app_format" ],
+            "priv_reqs": [ "bootloader_support", "soc", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/efuse/libefuse.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/esp32c3/esp_efuse_table.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/esp32c3/esp_efuse_fields.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/esp32c3/esp_efuse_rtc_calib.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/esp32c3/esp_efuse_utility.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/src/esp_efuse_api.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/src/esp_efuse_fields.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/src/esp_efuse_utility.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/src/esp_efuse_startup.c" ],
+            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/esp-idf/efuse/libefuse.a",
+            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/esp32c3/esp_efuse_table.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/esp32c3/esp_efuse_fields.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/esp32c3/esp_efuse_rtc_calib.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/esp32c3/esp_efuse_utility.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/src/esp_efuse_api.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/src/esp_efuse_fields.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/src/esp_efuse_utility.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c" ],
             "include_dirs": [ "include", "esp32c3/include" ]
         },
         "esp_app_format": {
@@ -108,14 +78,14 @@
             "target": "___idf_esp_app_format",
             "prefix": "idf",
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_app_format",
-            "type": "LIBRARY",
+            "type": "CONFIG_ONLY",
             "lib": "__idf_esp_app_format",
             "reqs": [],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/esp_app_format/libesp_app_format.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_app_format/esp_app_desc.c" ],
+            "file": "",
+            "sources": [],
             "include_dirs": [ "include" ]
         },
         "esp_bootloader_format": {
@@ -129,7 +99,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a",
+            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/esp-idf/esp_bootloader_format/libesp_bootloader_format.a",
             "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_bootloader_format/esp_bootloader_desc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -144,68 +114,8 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/esp_common/libesp_common.a",
+            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/esp-idf/esp_common/libesp_common.a",
             "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_common/src/esp_err_to_name.c" ],
-            "include_dirs": [ "include" ]
-        },
-        "esp_driver_bitscrambler": {
-            "alias": "idf::esp_driver_bitscrambler",
-            "target": "___idf_esp_driver_bitscrambler",
-            "prefix": "idf",
-            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_bitscrambler",
-            "type": "CONFIG_ONLY",
-            "lib": "__idf_esp_driver_bitscrambler",
-            "reqs": [],
-            "priv_reqs": [ "esp_mm" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
-            "include_dirs": [ "include" ]
-        },
-        "esp_driver_gpio": {
-            "alias": "idf::esp_driver_gpio",
-            "target": "___idf_esp_driver_gpio",
-            "prefix": "idf",
-            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_gpio",
-            "type": "LIBRARY",
-            "lib": "__idf_esp_driver_gpio",
-            "reqs": [],
-            "priv_reqs": [ "esp_pm" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/esp_driver_gpio/libesp_driver_gpio.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_gpio/src/gpio.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_gpio/src/gpio_glitch_filter_ops.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_gpio/src/rtc_io.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_gpio/src/dedic_gpio.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_gpio/src/gpio_pin_glitch_filter.c" ],
-            "include_dirs": [ "include" ]
-        },
-        "esp_driver_rmt": {
-            "alias": "idf::esp_driver_rmt",
-            "target": "___idf_esp_driver_rmt",
-            "prefix": "idf",
-            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_rmt",
-            "type": "LIBRARY",
-            "lib": "__idf_esp_driver_rmt",
-            "reqs": [],
-            "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_driver_bitscrambler", "esp_mm" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_rmt/src/rmt_common.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_rmt/src/rmt_encoder.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_rmt/src/rmt_encoder_bytes.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_rmt/src/rmt_encoder_copy.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_rmt/src/rmt_encoder_simple.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_rmt/src/rmt_rx.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_rmt/src/rmt_tx.c" ],
-            "include_dirs": [ "include" ]
-        },
-        "esp_driver_spi": {
-            "alias": "idf::esp_driver_spi",
-            "target": "___idf_esp_driver_spi",
-            "prefix": "idf",
-            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi",
-            "type": "LIBRARY",
-            "lib": "__idf_esp_driver_spi",
-            "reqs": [ "esp_pm" ],
-            "priv_reqs": [ "esp_timer", "esp_mm", "esp_driver_gpio" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/esp_driver_spi/libesp_driver_spi.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_common.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_master.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_slave.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_slave_hd.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_hw_support": {
@@ -216,57 +126,12 @@
             "type": "LIBRARY",
             "lib": "__idf_esp_hw_support",
             "reqs": [ "soc" ],
-            "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_security", "esp_driver_gpio", "esp_timer", "esp_pm", "esp_mm" ],
+            "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_security", "esp_system" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/esp_hw_support/libesp_hw_support.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/cpu.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/esp_cpu_intr.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/esp_memory_utils.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/cpu_region_protect.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/esp_clk.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/clk_ctrl_os.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/hw_random.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/intr_alloc.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/mac_addr.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/periph_ctrl.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/revision.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/rtc_module.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/regi2c_ctrl.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/esp_gpio_reserve.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/sar_periph_ctrl_common.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/io_mux.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/esp_clk_tree.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/dma/esp_dma_utils.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/dma/gdma_link.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/spi_bus_lock.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/clk_utils.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp_clk_tree_common.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/spi_share_hw_ctrl.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/adc_share_hw_ctrl.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/sleep_modem.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/sleep_modes.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/sleep_console.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/sleep_usb.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/sleep_gpio.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/sleep_event.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/dma/gdma.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/deprecated/gdma_legacy.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/dma/esp_async_memcpy.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/dma/async_memcpy_gdma.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/systimer.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/mspi_timing_tuning/mspi_timing_tuning.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/sleep_wake_stub.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/esp_clock_output.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/power_supply/brownout.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/rtc_clk_init.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/rtc_clk.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/rtc_init.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/rtc_sleep.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/rtc_time.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/chip_info.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/sar_periph_ctrl.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/adc2_init_cal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/esp_memprot.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp_memprot_conv.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/lowpower/port/esp32c3/sleep_cpu.c" ],
+            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/esp-idf/esp_hw_support/libesp_hw_support.a",
+            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/cpu.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/esp_cpu_intr.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/esp_memory_utils.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/cpu_region_protect.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/rtc_clk_init.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/rtc_clk.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/rtc_init.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/rtc_sleep.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/rtc_time.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/port/esp32c3/chip_info.c" ],
             "include_dirs": [ "include", "include/soc", "include/soc/esp32c3", "dma/include", "ldo/include", "debug_probe/include", "mspi_timing_tuning/include", "mspi_timing_tuning/tuning_scheme_impl/include", "power_supply/include" ]
-        },
-        "esp_mm": {
-            "alias": "idf::esp_mm",
-            "target": "___idf_esp_mm",
-            "prefix": "idf",
-            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_mm",
-            "type": "LIBRARY",
-            "lib": "__idf_esp_mm",
-            "reqs": [],
-            "priv_reqs": [ "heap", "spi_flash" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/esp_mm/libesp_mm.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_mm/esp_mmu_map.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_mm/port/esp32c3/ext_mem_layout.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_mm/esp_cache_msync.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_mm/esp_cache_utils.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_mm/heap_align_hw.c" ],
-            "include_dirs": [ "include" ]
-        },
-        "esp_partition": {
-            "alias": "idf::esp_partition",
-            "target": "___idf_esp_partition",
-            "prefix": "idf",
-            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_partition",
-            "type": "LIBRARY",
-            "lib": "__idf_esp_partition",
-            "reqs": [],
-            "priv_reqs": [ "esp_system", "spi_flash", "partition_table", "bootloader_support", "app_update" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/esp_partition/libesp_partition.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_partition/partition.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_partition/partition_target.c" ],
-            "include_dirs": [ "include" ]
-        },
-        "esp_pm": {
-            "alias": "idf::esp_pm",
-            "target": "___idf_esp_pm",
-            "prefix": "idf",
-            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_pm",
-            "type": "LIBRARY",
-            "lib": "__idf_esp_pm",
-            "reqs": [],
-            "priv_reqs": [ "esp_system", "esp_driver_gpio", "esp_timer" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/esp_pm/libesp_pm.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_pm/pm_locks.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_pm/pm_trace.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_pm/pm_impl.c" ],
-            "include_dirs": [ "include" ]
         },
         "esp_rom": {
             "alias": "idf::esp_rom",
@@ -279,7 +144,7 @@
             "priv_reqs": [ "soc", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/esp_rom/libesp_rom.a",
+            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/esp-idf/esp_rom/libesp_rom.a",
             "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/patches/esp_rom_sys.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/patches/esp_rom_print.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/patches/esp_rom_crc.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/patches/esp_rom_uart.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/patches/esp_rom_spiflash.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/patches/esp_rom_efuse.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/patches/esp_rom_gpio.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_rom/patches/esp_rom_systimer.c" ],
             "include_dirs": [ "include", "esp32c3/include", "esp32c3/include/esp32c3", "esp32c3" ]
         },
@@ -288,14 +153,14 @@
             "target": "___idf_esp_security",
             "prefix": "idf",
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_security",
-            "type": "LIBRARY",
+            "type": "CONFIG_ONLY",
             "lib": "__idf_esp_security",
             "reqs": [],
-            "priv_reqs": [ "efuse", "esp_hw_support", "esp_system", "esp_timer" ],
+            "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/esp_security/libesp_security.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_security/src/init.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_security/src/esp_hmac.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_security/src/esp_ds.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_security/src/esp_crypto_lock.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_security/src/esp_crypto_periph_clk.c" ],
+            "file": "",
+            "sources": [],
             "include_dirs": [ "include" ]
         },
         "esp_system": {
@@ -305,43 +170,13 @@
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system",
             "type": "LIBRARY",
             "lib": "__idf_esp_system",
-            "reqs": [],
-            "priv_reqs": [ "spi_flash", "esp_timer", "esp_mm", "bootloader_support", "esp_pm" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/esp_system/libesp_system.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/esp_err.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/crosscore_int.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/esp_ipc.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/esp_system_console.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/freertos_hooks.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/int_wdt.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/panic.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/esp_system.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/startup.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/startup_funcs.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/system_time.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/stack_check.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/ubsan.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/xt_wdt.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/task_wdt/task_wdt.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/task_wdt/task_wdt_impl_timergroup.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/hw_stack_guard.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/cpu_start.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/panic_handler.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/esp_system_chip.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/image_process.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/arch/riscv/expression_with_stack.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/arch/riscv/panic_arch.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/arch/riscv/debug_helpers.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/arch/riscv/debug_stubs.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/soc/esp32c3/clk.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/soc/esp32c3/reset_reason.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/soc/esp32c3/system_internal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/soc/esp32c3/cache_err_int.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/soc/esp32c3/apb_backup_dma.c" ],
-            "include_dirs": [ "include" ]
-        },
-        "esp_timer": {
-            "alias": "idf::esp_timer",
-            "target": "___idf_esp_timer",
-            "prefix": "idf",
-            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_timer",
-            "type": "LIBRARY",
-            "lib": "__idf_esp_timer",
-            "reqs": [],
+            "reqs": [ "spi_flash" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/esp_timer/libesp_timer.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_timer/src/esp_timer.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_timer/src/esp_timer_init.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_timer/src/ets_timer_legacy.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_timer/src/system_time.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_timer/src/esp_timer_impl_common.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_timer/src/esp_timer_impl_systimer.c" ],
-            "include_dirs": [ "include" ]
-        },
-        "espressif__led_strip": {
-            "alias": "idf::espressif__led_strip",
-            "target": "___idf_espressif__led_strip",
-            "prefix": "idf",
-            "dir": "E:/Githee/my_study/my_study/doc/ctrl_led/managed_components/espressif__led_strip",
-            "type": "LIBRARY",
-            "lib": "__idf_espressif__led_strip",
-            "reqs": [ "esp_driver_rmt", "esp_driver_spi" ],
-            "priv_reqs": [],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/espressif__led_strip/libespressif__led_strip.a",
-            "sources": [ "E:/Githee/my_study/my_study/doc/ctrl_led/managed_components/espressif__led_strip/src/led_strip_api.c", "E:/Githee/my_study/my_study/doc/ctrl_led/managed_components/espressif__led_strip/src/led_strip_rmt_dev.c", "E:/Githee/my_study/my_study/doc/ctrl_led/managed_components/espressif__led_strip/src/led_strip_rmt_encoder.c", "E:/Githee/my_study/my_study/doc/ctrl_led/managed_components/espressif__led_strip/src/led_strip_spi_dev.c" ],
-            "include_dirs": [ "include", "interface" ]
+            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/esp-idf/esp_system/libesp_system.a",
+            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/esp_err.c" ],
+            "include_dirs": []
         },
         "esptool_py": {
             "alias": "idf::esptool_py",
@@ -363,15 +198,15 @@
             "target": "___idf_freertos",
             "prefix": "idf",
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos",
-            "type": "LIBRARY",
+            "type": "CONFIG_ONLY",
             "lib": "__idf_freertos",
             "reqs": [],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/freertos/libfreertos.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/heap_idf.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/app_startup.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/port_common.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/port_systick.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/list.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/queue.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/tasks.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/timers.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/event_groups.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/stream_buffer.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/riscv/portasm.S", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/esp_additions/freertos_compatibility.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/esp_additions/idf_additions_event_groups.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/esp_additions/idf_additions.c" ],
-            "include_dirs": [ "config/include", "config/include/freertos", "config/riscv/include", "FreeRTOS-Kernel/include", "FreeRTOS-Kernel/portable/riscv/include", "FreeRTOS-Kernel/portable/riscv/include/freertos", "esp_additions/include" ]
+            "file": "",
+            "sources": [],
+            "include_dirs": []
         },
         "hal": {
             "alias": "idf::hal",
@@ -384,24 +219,9 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/hal/libhal.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/hal_utils.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/efuse_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/esp32c3/efuse_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/wdt_hal_iram.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/mmu_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/cache_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/color_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/spi_flash_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/spi_flash_hal_iram.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/spi_flash_encrypt_hal_iram.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/esp32c3/clk_tree_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/systimer_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/uart_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/uart_hal_iram.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/gpio_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/timer_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/ledc_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/ledc_hal_iram.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/i2c_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/i2c_hal_iram.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/rmt_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/uhci_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/twai_hal_sja1000.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/gdma_hal_top.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/gdma_hal_ahb_v1.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/i2s_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/sdm_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/adc_hal_common.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/adc_oneshot_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/adc_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/mpi_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/sha_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/aes_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/brownout_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/spi_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/spi_hal_iram.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/spi_slave_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/spi_slave_hal_iram.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/spi_slave_hd_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/spi_flash_hal_gpspi.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/hmac_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/ds_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/usb_serial_jtag_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/xt_wdt_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/esp32c3/rtc_cntl_hal.c" ],
+            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/esp-idf/hal/libhal.a",
+            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/hal_utils.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/efuse_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/esp32c3/efuse_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/wdt_hal_iram.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/mmu_hal.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/cache_hal.c" ],
             "include_dirs": [ "platform_port/include", "esp32c3/include", "include" ]
-        },
-        "heap": {
-            "alias": "idf::heap",
-            "target": "___idf_heap",
-            "prefix": "idf",
-            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/heap",
-            "type": "LIBRARY",
-            "lib": "__idf_heap",
-            "reqs": [],
-            "priv_reqs": [ "soc" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/heap/libheap.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/heap_caps_base.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/heap_caps.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/heap_caps_init.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/multi_heap.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/tlsf/tlsf.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/port/memory_layout_utils.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/heap/port/esp32c3/memory_layout.c" ],
-            "include_dirs": [ "include", "tlsf" ]
         },
         "log": {
             "alias": "idf::log",
@@ -411,56 +231,56 @@
             "type": "LIBRARY",
             "lib": "__idf_log",
             "reqs": [],
-            "priv_reqs": [ "hal", "soc", "esp_hw_support" ],
+            "priv_reqs": [ "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/log/liblog.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/os/log_timestamp.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/log_timestamp_common.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/os/log_lock.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/buffer/log_buffers.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/os/util.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/util.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/log_format_text.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/log_print.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/log.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/os/log_write.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/log_level/log_level.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/log_level/tag_log_level/tag_log_level.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/log_level/tag_log_level/linked_list/log_linked_list.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/log_level/tag_log_level/cache/log_binary_heap.c" ],
+            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/esp-idf/log/liblog.a",
+            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/noos/log_timestamp.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/log_timestamp_common.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/noos/log_lock.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/buffer/log_buffers.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/noos/util.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/util.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/log_format_text.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/log_print.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/log.c" ],
             "include_dirs": [ "include" ]
         },
         "main": {
             "alias": "idf::main",
             "target": "___idf_main",
             "prefix": "idf",
-            "dir": "E:/Githee/my_study/my_study/doc/ctrl_led/main",
+            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main",
             "type": "LIBRARY",
             "lib": "__idf_main",
-            "reqs": [],
-            "priv_reqs": [ "espressif__led_strip" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [ "espressif__led_strip" ],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/main/libmain.a",
-            "sources": [ "E:/Githee/my_study/my_study/doc/ctrl_led/main/blink_example_main.c" ],
-            "include_dirs": [ "." ]
-        },
-        "mbedtls": {
-            "alias": "idf::mbedtls",
-            "target": "___idf_mbedtls",
-            "prefix": "idf",
-            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/mbedtls",
-            "type": "LIBRARY",
-            "lib": "__idf_mbedtls",
-            "reqs": [],
-            "priv_reqs": [ "soc", "esp_hw_support", "esp_pm" ],
+            "reqs": [ "bootloader", "bootloader_support" ],
+            "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/mbedtls/libmbedtls.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c", "E:/Githee/my_study/my_study/doc/ctrl_led/build/x509_crt_bundle.S" ],
-            "include_dirs": [ "port/include", "mbedtls/include", "mbedtls/library", "esp_crt_bundle/include" ]
+            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/esp-idf/main/libmain.a",
+            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main/bootloader_start.c" ],
+            "include_dirs": []
+        },
+        "micro-ecc": {
+            "alias": "idf::micro-ecc",
+            "target": "___idf_micro-ecc",
+            "prefix": "idf",
+            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/components/micro-ecc",
+            "type": "LIBRARY",
+            "lib": "__idf_micro-ecc",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/esp-idf/micro-ecc/libmicro-ecc.a",
+            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/components/micro-ecc/uECC_verify_antifault.c" ],
+            "include_dirs": [ ".", "micro-ecc" ]
         },
         "newlib": {
             "alias": "idf::newlib",
             "target": "___idf_newlib",
             "prefix": "idf",
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib",
-            "type": "LIBRARY",
+            "type": "CONFIG_ONLY",
             "lib": "__idf_newlib",
             "reqs": [],
-            "priv_reqs": [ "soc", "spi_flash" ],
+            "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/newlib/libnewlib.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/init.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/abort.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/assert.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/heap.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/locks.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/poll.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/pthread.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/random.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/getentropy.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/termios.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/stdatomic.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/time.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/sysconf.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/realpath.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/scandir.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/syscalls.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/reent_syscalls.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/port/esp_time_impl.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/flockfile.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/reent_init.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/newlib_init.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/port/esp_time_impl.c" ],
+            "file": "",
+            "sources": [],
             "include_dirs": [ "platform_include" ]
         },
         "partition_table": {
@@ -478,21 +298,6 @@
             "sources": [],
             "include_dirs": []
         },
-        "pthread": {
-            "alias": "idf::pthread",
-            "target": "___idf_pthread",
-            "prefix": "idf",
-            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/pthread",
-            "type": "LIBRARY",
-            "lib": "__idf_pthread",
-            "reqs": [],
-            "priv_reqs": [],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/pthread/libpthread.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/pthread/pthread.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/pthread/pthread_cond_var.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/pthread/pthread_local_storage.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/pthread/pthread_rwlock.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/pthread/pthread_semaphore.c" ],
-            "include_dirs": [ "include" ]
-        },
         "riscv": {
             "alias": "idf::riscv",
             "target": "___idf_riscv",
@@ -504,8 +309,8 @@
             "priv_reqs": [ "soc", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/riscv/libriscv.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/riscv/instruction_decode.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/riscv/interrupt.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/riscv/rv_utils.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/riscv/vectors.S", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/riscv/interrupt_intc.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/riscv/vectors_intc.S" ],
+            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/esp-idf/riscv/libriscv.a",
+            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/riscv/rv_utils.c" ],
             "include_dirs": [ "include" ]
         },
         "soc": {
@@ -519,7 +324,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/soc/libsoc.a",
+            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/esp-idf/soc/libsoc.a",
             "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/lldesc.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/dport_access_common.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/interrupts.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/gpio_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/uart_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/adc_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/dedic_gpio_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/gdma_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/spi_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/ledc_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/rmt_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/sdm_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/i2s_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/i2c_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/temperature_sensor_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/timer_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/mpi_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/twai_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/wdt_periph.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/soc/esp32c3/power_supply_periph.c" ],
             "include_dirs": [ "include", "esp32c3", "esp32c3/include", "esp32c3/register" ]
         },
@@ -531,11 +336,11 @@
             "type": "LIBRARY",
             "lib": "__idf_spi_flash",
             "reqs": [ "hal" ],
-            "priv_reqs": [ "bootloader_support", "app_update", "soc", "esp_mm", "esp_driver_gpio" ],
+            "priv_reqs": [ "bootloader_support", "soc" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/esp-idf/spi_flash/libspi_flash.a",
-            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/flash_brownout_hook.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/spi_flash_chip_drivers.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/spi_flash_chip_generic.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/spi_flash_chip_issi.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/spi_flash_chip_mxic.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/spi_flash_chip_gd.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/spi_flash_chip_winbond.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/spi_flash_chip_boya.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/spi_flash_chip_mxic_opi.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/spi_flash_chip_th.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/memspi_host_driver.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/cache_utils.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/flash_mmap.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/flash_ops.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/spi_flash_wrap.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/esp_flash_api.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/esp_flash_spi_init.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/spi_flash_os_func_app.c", "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/spi_flash_os_func_noos.c" ],
+            "file": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/esp-idf/spi_flash/libspi_flash.a",
+            "sources": [ "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash/spi_flash_wrap.c" ],
             "include_dirs": [ "include" ]
         }
     },
@@ -583,10 +388,10 @@
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader_support",
             "lib": "__idf_bootloader_support",
             "reqs": [ "soc" ],
-            "priv_reqs": [ "spi_flash", "mbedtls", "efuse", "heap", "esp_bootloader_format", "esp_app_format" ],
+            "priv_reqs": [ "micro-ecc", "spi_flash", "efuse", "esp_bootloader_format", "esp_app_format", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "bootloader_flash/include" ]
+            "include_dirs": [ "include", "bootloader_flash/include", "private_include" ]
         },
         "bt": {
             "alias": "idf::bt",
@@ -622,7 +427,7 @@
             "priv_reqs": [ "esp_driver_uart", "esp_driver_usb_serial_jtag" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "E:/Githee/my_study/my_study/doc/ctrl_led/build" ]
+            "include_dirs": [ "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader" ]
         },
         "cxx": {
             "alias": "idf::cxx",
@@ -642,11 +447,11 @@
             "prefix": "idf",
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/driver",
             "lib": "__idf_driver",
-            "reqs": [ "esp_pm", "esp_ringbuf", "freertos", "soc", "hal", "esp_hw_support", "esp_driver_gpio", "esp_driver_pcnt", "esp_driver_gptimer", "esp_driver_spi", "esp_driver_mcpwm", "esp_driver_ana_cmpr", "esp_driver_i2s", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_sdio", "esp_driver_dac", "esp_driver_rmt", "esp_driver_tsens", "esp_driver_sdm", "esp_driver_i2c", "esp_driver_uart", "esp_driver_ledc", "esp_driver_parlio", "esp_driver_usb_serial_jtag", "esp_driver_twai" ],
-            "priv_reqs": [ "efuse", "esp_timer", "esp_mm" ],
+            "reqs": [],
+            "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "deprecated", "i2c/include", "touch_sensor/include", "twai/include" ]
+            "include_dirs": []
         },
         "efuse": {
             "alias": "idf::efuse",
@@ -655,7 +460,7 @@
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/efuse",
             "lib": "__idf_efuse",
             "reqs": [],
-            "priv_reqs": [ "bootloader_support", "soc", "spi_flash", "esp_system", "esp_partition", "esp_app_format" ],
+            "priv_reqs": [ "bootloader_support", "soc", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include", "esp32c3/include" ]
@@ -670,7 +475,7 @@
             "priv_reqs": [ "http_parser", "esp_timer", "lwip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "E:/Githee/my_study/my_study/doc/ctrl_led/build", "esp-tls-crypto" ]
+            "include_dirs": [ "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader", "esp-tls-crypto" ]
         },
         "esp_adc": {
             "alias": "idf::esp_adc",
@@ -1147,7 +952,7 @@
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support",
             "lib": "__idf_esp_hw_support",
             "reqs": [ "soc" ],
-            "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_security", "esp_driver_gpio", "esp_timer", "esp_pm", "esp_mm" ],
+            "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_security", "esp_system" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include", "include/soc", "include/soc/esp32c3", "dma/include", "ldo/include", "debug_probe/include", "mspi_timing_tuning/include", "mspi_timing_tuning/tuning_scheme_impl/include", "power_supply/include" ]
@@ -1218,8 +1023,8 @@
             "prefix": "idf",
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_partition",
             "lib": "__idf_esp_partition",
-            "reqs": [],
-            "priv_reqs": [ "esp_system", "spi_flash", "partition_table", "bootloader_support", "app_update" ],
+            "reqs": [ "spi_flash" ],
+            "priv_reqs": [ "bootloader_support" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1291,7 +1096,7 @@
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_security",
             "lib": "__idf_esp_security",
             "reqs": [],
-            "priv_reqs": [ "efuse", "esp_hw_support", "esp_system", "esp_timer" ],
+            "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1302,11 +1107,11 @@
             "prefix": "idf",
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system",
             "lib": "__idf_esp_system",
-            "reqs": [],
-            "priv_reqs": [ "spi_flash", "esp_timer", "esp_mm", "bootloader_support", "esp_pm" ],
+            "reqs": [ "spi_flash" ],
+            "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": []
         },
         "esp_tee": {
             "alias": "idf::esp_tee",
@@ -1318,7 +1123,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": []
         },
         "esp_timer": {
             "alias": "idf::esp_timer",
@@ -1402,7 +1207,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "config/include", "config/include/freertos", "config/riscv/include", "FreeRTOS-Kernel/include", "FreeRTOS-Kernel/portable/riscv/include", "FreeRTOS-Kernel/portable/riscv/include/freertos", "esp_additions/include" ]
+            "include_dirs": []
         },
         "hal": {
             "alias": "idf::hal",
@@ -1495,7 +1300,7 @@
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/log",
             "lib": "__idf_log",
             "reqs": [],
-            "priv_reqs": [ "hal", "soc", "esp_hw_support" ],
+            "priv_reqs": [ "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1519,10 +1324,10 @@
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/mbedtls",
             "lib": "__idf_mbedtls",
             "reqs": [],
-            "priv_reqs": [ "soc", "esp_hw_support", "esp_pm" ],
+            "priv_reqs": [ "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "port/include", "mbedtls/include", "mbedtls/library", "esp_crt_bundle/include" ]
+            "include_dirs": []
         },
         "mqtt": {
             "alias": "idf::mqtt",
@@ -1543,7 +1348,7 @@
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib",
             "lib": "__idf_newlib",
             "reqs": [],
-            "priv_reqs": [ "soc", "spi_flash" ],
+            "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "platform_include" ]
@@ -1555,7 +1360,7 @@
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/nvs_flash",
             "lib": "__idf_nvs_flash",
             "reqs": [ "esp_partition" ],
-            "priv_reqs": [ "spi_flash", "newlib" ],
+            "priv_reqs": [ "mbedtls" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1699,7 +1504,7 @@
             "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/spi_flash",
             "lib": "__idf_spi_flash",
             "reqs": [ "hal" ],
-            "priv_reqs": [ "bootloader_support", "app_update", "soc", "esp_mm", "esp_driver_gpio" ],
+            "priv_reqs": [ "bootloader_support", "soc" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1840,33 +1645,33 @@
             "alias": "idf::main",
             "target": "___idf_main",
             "prefix": "idf",
-            "dir": "E:/Githee/my_study/my_study/doc/ctrl_led/main",
+            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main",
             "lib": "__idf_main",
-            "reqs": [],
-            "priv_reqs": [ "espressif__led_strip" ],
-            "managed_reqs": [],
-            "managed_priv_reqs": [ "espressif__led_strip" ],
-            "include_dirs": [ "." ]
-        },
-        "espressif__led_strip": {
-            "alias": "idf::espressif__led_strip",
-            "target": "___idf_espressif__led_strip",
-            "prefix": "idf",
-            "dir": "E:/Githee/my_study/my_study/doc/ctrl_led/managed_components/espressif__led_strip",
-            "lib": "__idf_espressif__led_strip",
-            "reqs": [ "esp_driver_rmt", "esp_driver_spi" ],
+            "reqs": [ "bootloader", "bootloader_support" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "interface" ]
+            "include_dirs": []
+        },
+        "micro-ecc": {
+            "alias": "idf::micro-ecc",
+            "target": "___idf_micro-ecc",
+            "prefix": "idf",
+            "dir": "E:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/components/micro-ecc",
+            "lib": "__idf_micro-ecc",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ ".", "micro-ecc" ]
         }
     },
     "debug_prefix_map_gdbinit": "",
     "gdbinit_files": {
-        "01_symbols": "E:/Githee/my_study/my_study/doc/ctrl_led/build/gdbinit/symbols",
-        "02_prefix_map": "E:/Githee/my_study/my_study/doc/ctrl_led/build/gdbinit/prefix_map",
-        "03_py_extensions": "E:/Githee/my_study/my_study/doc/ctrl_led/build/gdbinit/py_extensions",
-        "04_connect": "E:/Githee/my_study/my_study/doc/ctrl_led/build/gdbinit/connect"
+        "01_symbols": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/gdbinit/symbols",
+        "02_prefix_map": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/gdbinit/prefix_map",
+        "03_py_extensions": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/gdbinit/py_extensions",
+        "04_connect": "E:/Githee/my_study/my_study/doc/ctrl_led/build/bootloader/gdbinit/connect"
     },
     "debug_arguments_openocd": "-f board/esp32c3-builtin.cfg"
 }
